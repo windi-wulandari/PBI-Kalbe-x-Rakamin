@@ -24,7 +24,7 @@ Sebelum memulai proyek, silakan selesaikan langkah-langkah pre-requisite di bawa
    Daftar dan buat database di Railway untuk layanan cloud database [di sini](https://railway.app/).
 
 2. **Login Lucidchart**  
-   Gunakan Lucidchart untuk pembuatan ERD dengan notasi Chen [di sini](https://www.lucidchart.com).
+   Gunakan Lucidchart untuk pembuatan ERD. [di sini](https://www.lucidchart.com).
 
 3. **Install PostgreSQL**  
    Unduh dan install PostgreSQL [di sini](https://www.postgresql.org/download/).
