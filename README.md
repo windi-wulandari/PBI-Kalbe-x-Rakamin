@@ -33,10 +33,10 @@ Sebelum memulai proyek, silakan selesaikan langkah-langkah pre-requisite di bawa
    Install ekstensi PgAgent untuk penjadwalan tugas di PostgreSQL.
 
 5. **Install DBeaver**  
-   Download dan install DBeaver [di sini](https://dbeaver.io/download/) atau [PgAdmin 4](https://www.pgadmin.org/download/) untuk mengelola database PostgreSQL Anda.
+   Download dan install DBeaver [di sini](https://dbeaver.io/download/) atau [PgAdmin 4](https://www.pgadmin.org/download/) untuk mengelola database PostgreSQL.
 
 6. **Install SolarWinds Database Performance Analyzer (DPA)**  
-   Untuk memonitor performa database, install SolarWinds DPA [di sini](https://www.solarwinds.com/database-performance-analyzer). Jika menggunakan Mac atau Docker, Anda bisa membangun dan menjalankannya melalui Docker [di sini](https://github.com/solarwinds/containers/tree/master/dpa).
+   Untuk memonitor performa database, install SolarWinds DPA [di sini](https://www.solarwinds.com/database-performance-analyzer). Jika menggunakan Mac atau Docker, bisa membangun dan menjalankannya melalui Docker [di sini](https://github.com/solarwinds/containers/tree/master/dpa).
 
 
 
@@ -44,7 +44,7 @@ Sebelum memulai proyek, silakan selesaikan langkah-langkah pre-requisite di bawa
 # **Step by Step**
 ## **- Data Normalization**
 
-Ini adalah data awal dalam format mentah yang akan digunakan untuk proses **normalisasi** dalam sistem manajemen distribusi produk. Berikut adalah **Data Dictionary** yang menjelaskan setiap kolom dalam dataset tersebut.
+Di bawah adalah data awal dalam format mentah yang akan digunakan untuk proses **normalisasi** dalam sistem manajemen distribusi produk. Berikut adalah **Data Dictionary** yang menjelaskan setiap kolom dalam dataset tersebut.
 
 | No  | Column Name            | Description                                                                 |
 |-----|------------------------|-----------------------------------------------------------------------------|
@@ -85,10 +85,10 @@ Berikut adalah langkah-langkah untuk menyiapkan database PostgreSQL di Railway, 
    - Pilih template **PostgreSQL** untuk membuat instance database PostgreSQL.
 
 4. **Konfigurasi Database**:
-   - Railway akan otomatis membuat instance PostgreSQL untuk Anda. Tunggu hingga proses selesai.
+   - Railway akan otomatis membuat instance PostgreSQL. Tunggu hingga proses selesai.
 
 5. **Akses Database**:
-   - Setelah database berhasil dibuat, Anda akan melihat informasi koneksi database Anda. Catat detail berikut ini:
+   - Setelah database berhasil dibuat, selanjutnya akan melihat informasi koneksi database. Catat detail berikut ini:
 
    > Contoh informasi koneksi:
    >
@@ -154,7 +154,7 @@ Berikut adalah langkah-langkah untuk mengimpor data dari spreadsheet ke database
    - Pastikan kolom dari file CSV sudah terpetakan dengan benar ke kolom di tabel. Sesuaikan mapping jika diperlukan.
 
 8. **Pengaturan Impor**:
-   - Setelah memastikan mapping kolom benar, klik **"Next"**. Anda dapat mengatur opsi tambahan, seperti pengabaian baris header.
+   - Setelah memastikan mapping kolom benar, klik **"Next"**. Selanjutnya dapat mengatur opsi tambahan, seperti pengabaian baris header.
 
 9. **Mulai Impor**:
    - Klik **"Finish"** untuk memulai proses impor dan tunggu hingga proses selesai.
@@ -283,7 +283,7 @@ Berikut adalah contoh penggunaan fungsi `generator_kode_pengiriman` yang telah d
 
  ## **- Created Store Prosedur**
 
- Berikut adalah penjelasan tentang prosedur `create_new_shipment` yang telah dibuat. Prosedur ini berfungsi untuk menambahkan pengiriman baru ke dalam tabel `shipment` dengan menggunakan kode pengiriman yang dihasilkan oleh fungsi `generator_kode_pengiriman`.
+Berikut adalah penjelasan tentang prosedur `create_new_shipment` yang telah dibuat. Prosedur ini berfungsi untuk menambahkan pengiriman baru ke dalam tabel `shipment` dengan menggunakan kode pengiriman yang dihasilkan oleh fungsi `generator_kode_pengiriman`.
 
 
 ```sql
@@ -477,9 +477,9 @@ GRANT SELECT ON pg_stat_statements TO windi;
 
 **Tersedia opsi untuk mencoba SolarWinds versi trial selama 14 hari. Berikut adalah langkah-langkahnya:**
 
-1. **Login ke SolarWinds DPA** menggunakan akun yang telah dibuat. Jika belum memiliki akun, daftar terlebih dahulu di situs SolarWinds.
+1. **Login ke SolarWinds DPA** menggunakan akun yang telah dibuat. Jika belum memiliki akun, daftar terlebih dahulu di situs SolarWinds. Masuk dengan mencantumkan localhost di browser.
   
-2. Setelah berhasil login, buka bagian **Register a Database** atau **Add Database** pada dashboard SolarWinds DPA.
+2. Setelah berhasil masuk, buka bagian **Register a Database** atau **Add Database** pada dashboard SolarWinds DPA.
 
 3. Pada proses pendaftaran, masukkan informasi database Railway dengan detail yang sama seperti connection string yang digunakan di pgAdmin dan DBeaver sebelumnya.
 
@@ -510,5 +510,5 @@ Setelah melalui beberepa step, proyek ini telah berhasil mencapai tahap awal dal
 
 # **Limitation**
 
-Limitasi dari proyek ini salah satunya adalah tahap pengujian yang dilakukan dengan jumlah data yang relatif sedikit. Hal ini mengakibatkan hasil yang diperoleh mungkin belum sepenuhnya mencerminkan kondisi nyata yang akan dihadapi dalam skala lebih besar. Pengaplikasian big data juga memberikan tantangan tersendiri, terutama dalam mengolah data real-time. Dengan volume data yang besar dan cepat, diperlukan strategi yang efektif untuk mengelola dan menganalisis informasi secara tepat waktu.
+Limitasi dari proyek ini salah satunya adalah tahap pengujian yang dilakukan dengan jumlah data yang relatif sedikit. Hal ini mengakibatkan hasil yang diperoleh mungkin belum sepenuhnya mencerminkan kondisi nyata yang akan dihadapi dalam skala lebih besar. Pengaplikasian big data juga memberikan tantangan tersendiri, terutama dalam mengolah data real-time. Dengan volume data yang besar dan cepat, diperlukan strategi yang efektif untuk mengelola dan menganalisis informasi secara tepat waktu. Ini dapat dikembangkan pada project selanjutnya.
 
