@@ -273,11 +273,9 @@ Berikut adalah contoh penggunaan fungsi `generator_kode_pengiriman` yang telah d
 4. **Hasil**:
    - Dengan pernyataan di atas, saat data dimasukkan ke dalam tabel `shipment`, kolom `kode_pengiriman` akan terisi dengan kode pengiriman yang dihasilkan oleh fungsi. Misalnya, jika kode pengiriman yang dihasilkan adalah `240102001`, maka baris baru dalam tabel `shipment` akan terlihat seperti ini:
 
-   ```
-   | kode_pengiriman | product_name     | qty | store |
-   |------------------|------------------|-----|--------------------|
-   | 240102001        | Contoh Produk    | 10  | Toko A             |
-   ```
+| kode_pengiriman | product_name   | qty | store  |
+|------------------|----------------|-----|--------|
+| 240102001        | Contoh Produk  | 10  | Toko A |
 
 - Dengan cara ini, setiap kali ada pengiriman baru, kode pengiriman yang unik dapat dihasilkan secara otomatis, sehingga mengurangi kemungkinan terjadinya duplikasi dan memastikan bahwa setiap pengiriman dapat dilacak dengan mudah berdasarkan tanggal dan nomor urutnya.
 
